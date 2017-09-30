@@ -1,0 +1,211 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    font-family: 'Lobster', cursive;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    color: white;
+    background-color: black;
+    font-family: 'Lobster', cursive;
+}
+
+#main span {
+    font-size: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Home CSS */
+
+.main-caption {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+.parallax {
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.para1 {
+    background-image: url('../images/peopleBackCamera.jpg');
+    height: 600px; 
+}
+.para2 {
+    background-image: url('../images/peopleBackCave.jpg');
+    height: 600px; 
+}
+
+
+.para3 {
+    background-image: url('../images/peopleGirlBack.jpg');
+    height: 600px; 
+}
+
+.photo-link {
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.photo-link-one {
+    background-image: url('../images/abstractBulb.jpg');
+    height: 500px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background:rgba(255,255,255, 0.3);
+}
+
+.photo-link:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+  color: white;
+  font-family: 'Lobster', cursive;
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.photo-link-two {
+    background-image: url('../images/peopleBubbles.jpg');
+    height: 500px;
+}
+
+.photo-link-three {
+    background-image: url('../images/placesPhil2.jpg');
+    height: 500px;
+}
+
+/* PAGES CSS  */
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 20px 50px 0 rgba(231, 58, 58, 0.80)
+}
+
+#abstract {
+    text-align: center;
+    color: black;
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+.exact-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.fit {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+
+.image {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.footer {
+    background-color: black;
+    height: 200px;
+    margin-top: 400px;
+}
+
+.panel-footer {
+    margin-top: 100px;
+    margin-bottom: 0px;
+    border-radius: 0;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-top: 0;
+    padding: 130px 20px 10px 20px; 
+    font-family: 'Lato';
+}
+
+.panel-footer img {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
